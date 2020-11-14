@@ -4,7 +4,11 @@
 <form method="POST">
     {% csrf_token %}
     <h1>Eliminar Producto {{product.description}}</h1>
-    <button type="submit"> Eliminar </button>
+  <button class="btn waves-effect waves-light" type="submit" name="action">
+    <i class="material-icons right">Eliminar</i>
+  </button>
+        
+
 </form>
 
 {% endblock content %}
