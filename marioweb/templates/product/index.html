@@ -1,0 +1,41 @@
+{% extends "base/index.html" %}
+{% block content %}
+    
+    <div class="row">
+        <div class="container">
+            <div class="form">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                descripción
+                            </th>
+                            <th>
+                                Valor
+                            </th>
+                            <th>
+                                Tamaño
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for product in products %}
+                    <tr>
+                        <td>
+                            {{product.description}}
+                        </td>
+                        <td>
+                            {{product.cost}}
+                        </td>
+                        <td>
+                            {{product.size}}
+                        </td>
+                    </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+      </div>
+    </div>
+    
+{% endblock content %}

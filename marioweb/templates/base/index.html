@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    <title>marioWeb</title>
+</head>
+<body>
+
+
+    {% block header %}
+    
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Bienvenidos a CatDog  </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <!-- <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li> ¡-->
+          </ul>
+        </div>
+      </nav>
+    {% endblock header %}
+    {% block content %}
+      <h1>ola</h1>
+    {% endblock content %}
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</body>
+</html>
